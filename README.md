@@ -38,8 +38,8 @@ AutoReview is a web application that aggregates and analyzes product reviews fro
 
 2. Create and activate a virtual environment:
    ```bash
-   python -m venv nenv
-   source nenv/bin/activate  # On Windows use `nenv\Scripts\activate`
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
 3. Install backend dependencies:
