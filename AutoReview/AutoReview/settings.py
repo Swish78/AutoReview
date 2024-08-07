@@ -41,7 +41,16 @@ EXTENDED_APPS = [
     "Users",
 ]
 
+
 INSTALLED_APPS = [
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'rest_framework',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
