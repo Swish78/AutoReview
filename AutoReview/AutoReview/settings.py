@@ -30,6 +30,17 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+EXTENDED_APPS = [
+    "core",
+    "API",
+    "Insights",
+    "products",
+    "Reviews",
+    "Scraping",
+    "Sentiment_Analysis",
+    "Users",
+]
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -38,6 +49,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+
+INSTALLED_APPS += EXTENDED_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
