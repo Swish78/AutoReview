@@ -4,6 +4,7 @@ djangorestframework==3.14.0
 
 # Auth
 django-allauth==0.57.0
+django-allauth[socialaccount]
 
 # Celery for asynchronous task processing
 celery==5.3.6
