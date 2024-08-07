@@ -59,7 +59,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
+
 INSTALLED_APPS += EXTENDED_APPS
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -70,6 +73,22 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
+# Specify the URL to redirect to after successful login
+# LOGIN_REDIRECT_URL = '/'
 
 ROOT_URLCONF = "AutoReview.urls"
 
