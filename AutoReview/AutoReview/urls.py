@@ -26,4 +26,3 @@ urlpatterns = [
     path('auth/social/', include('allauth.socialaccount.urls')),
     path('', include('core.urls')),
 ]
-
