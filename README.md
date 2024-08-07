@@ -108,3 +108,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Machine Learning Libraries:** Thanks to the open-source libraries used for sentiment analysis and summarization.
 - **Frontend Libraries:** React and Tailwind CSS for a responsive and modern UI.
+- **Git Cheatsheet:** https://education.github.com/git-cheat-sheet-education.pdf
