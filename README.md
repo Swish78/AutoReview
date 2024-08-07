@@ -15,7 +15,7 @@ AutoReview is a web application that aggregates and analyzes product reviews fro
 - **Frontend:** React, Tailwind CSS
 - **Backend:** Django, Django REST Framework (DRF)
 - **Machine Learning:** Python-based ML models for sentiment analysis and text summarization
-- **Database:** PostgreSQL
+- **Database:** PostgreSQL / SQLite
 - **Cron Jobs:** Celery
 - **Web Scraping / APIs:** BeautifulSoup, Scrapy, or platform APIs
 - **Deployment:** AWS, Heroku, Vercel, Netlify
@@ -26,7 +26,7 @@ AutoReview is a web application that aggregates and analyzes product reviews fro
 
 - Python 3.x
 - Node.js and npm
-- PostgreSQL
+- PostgreSQL / SQLite
 
 ### Backend Setup
 
