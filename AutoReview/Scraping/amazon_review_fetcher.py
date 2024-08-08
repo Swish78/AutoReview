@@ -19,11 +19,11 @@ class AmazonReviewFetcher:
         Parameters:
         - asin (str): Amazon Standard Identification Number (ASIN) of the product.
         - country (str): Country code. Default is 'IN'.
-        - sort_by (str): Sorting option. Default is 'TOP_REVIEWS'.
+        - sort_by (str): A sorting option. Default is 'TOP_REVIEWS'.
         - star_rating (str): Filter by star rating. Default is 'ALL'.
         - verified_purchases_only (bool): Whether to include only verified purchases. Default is False.
         - images_or_videos_only (bool): Whether to include only reviews with images or videos. Default is False.
-        - current_format_only (bool): Whether to include only current format. Default is False.
+        - current_format_only (bool): Whether to include only the current format. Default is False.
         - page (int): Page number. Default is 1.
 
         Returns:
@@ -53,10 +53,8 @@ class AmazonReviewFetcher:
         response = requests.get(self.base_url, headers=self.headers, params=querystring)
         data = response.json()
 
-        # Access the reviews within the 'data' key
         reviews = data.get('data', {}).get('reviews', [])
 
-        # Extract specific columns
         extracted_reviews = []
         for review in reviews:
             extracted_review = {
@@ -70,11 +68,3 @@ class AmazonReviewFetcher:
 
         return extracted_reviews
 
-
-fetcher = AmazonReviewFetcher()
-
-querystring = fetcher.set_querystring(asin="B09JVCT78G")
-extracted_reviews = fetcher.fetch_reviews(querystring)
-
-for review in extracted_reviews:
-    print(review['review_comment'])
