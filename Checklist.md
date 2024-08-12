@@ -1,15 +1,15 @@
 ## Features Checklist
 
-- [ ] **Aggregates Product Reviews**
-  - [ ] Collects reviews from various sources (e.g., Amazon, Yelp)
-  - [ ] Integrates with platform APIs for review retrieval
+- [x] **Aggregates Product Reviews**
+  - [x] Collects reviews from various sources (e.g., Amazon, Yelp)
+  - [x] Integrates with platform APIs for review retrieval
 
 - [ ] **Sentiment Analysis**
   - [ ] Analyzes sentiment of reviews (positive, negative, neutral)
-  - [ ] Utilizes Python-based ML models for sentiment analysis
+  - [] Utilizes Python-based ML models for sentiment analysis 
 
 - [ ] **Summarized Insights**
-  - [ ] Provides summarized insights for each product
+  - [x] Provides summarized insights for each product -> used "https://huggingface.co/paulmbw/autotrain-productkit-customer-insights-2851583532"
   - [ ] Generates ratings based on aggregated review data
 
 - [ ] **Real-time and Periodic Updates**
@@ -23,12 +23,12 @@
 ## Tech Stack Checklist
 
 ### Frontend
-- [ ] React
-- [ ] Tailwind CSS
+- [x] React
+- [x] Tailwind CSS
 
 ### Backend
-- [ ] Django
-- [ ] Django REST Framework (DRF)
+- [x] Django
+- [x] Django REST Framework (DRF)
 
 ### Machine Learning
 - [ ] Python-based ML models for sentiment analysis
@@ -36,7 +36,7 @@
 
 ### Database
 - [ ] PostgreSQL
-- [ ] SQLite (alternative option)
+- [x] SQLite (alternative option)
 
 ### Cron Jobs
 - [ ] Celery for scheduling tasks
